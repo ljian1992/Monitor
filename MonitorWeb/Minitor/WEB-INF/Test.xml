@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+	<car car_id = "">
+    	<driver_name>zhangshang</driver_name>
+    	<number>粤。3687</number>
+    	<deadweight>3000</deadweight>
+    	<isdriving>F</isdriving>
+	</car>
+
+	<car car_id="">
+		<driver_name>zhangshang</driver_name>
+		<number>粤。3687</number>
+		<deadweight>3000</deadweight>
+		<isdriving>F</isdriving>
+	</car>
+	
+	
+	<MonitorDatas>
+	    
+	</MonitorDatas>
+	  
+	
+</cars>

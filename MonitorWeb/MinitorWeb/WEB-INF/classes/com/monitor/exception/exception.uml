@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="exception">
+  <packagedElement xmi:type="uml:Package" xmi:id="_c5GkIPS1EeSYHeEYrGkV3w" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_c5GkIfS1EeSYHeEYrGkV3w" name="monitor">
+      <packagedElement xmi:type="uml:Package" xmi:id="_c5GkIvS1EeSYHeEYrGkV3w" name="exception">
+        <packagedElement xmi:type="uml:Class" xmi:id="_c5GkI_S1EeSYHeEYrGkV3w" name="MonitorDataMsgException">
+          <generalization xmi:id="_dHnhQfS1EeSYHeEYrGkV3w" general="_dHnhQPS1EeSYHeEYrGkV3w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_c5MqwPS1EeSYHeEYrGkV3w" name="UserMsgException">
+          <generalization xmi:id="_dHnhQvS1EeSYHeEYrGkV3w" general="_dHnhQPS1EeSYHeEYrGkV3w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_c5SxYPS1EeSYHeEYrGkV3w" name="CarMsgException">
+          <generalization xmi:id="_dHnhQ_S1EeSYHeEYrGkV3w" general="_dHnhQPS1EeSYHeEYrGkV3w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dHnhQPS1EeSYHeEYrGkV3w" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

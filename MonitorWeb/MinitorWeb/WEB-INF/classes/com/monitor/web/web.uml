@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="web">
+  <packagedElement xmi:type="uml:Package" xmi:id="_URZ3EPJbEeSgaKip0ZQwvw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_URaeIPJbEeSgaKip0ZQwvw" name="monitor">
+      <packagedElement xmi:type="uml:Package" xmi:id="_URaeIfJbEeSgaKip0ZQwvw" name="web">
+        <packagedElement xmi:type="uml:Class" xmi:id="_URaeIvJbEeSgaKip0ZQwvw" name="MonitorDataServlet">
+          <generalization xmi:id="_UVaNUfJbEeSgaKip0ZQwvw" general="_UVaNUPJbEeSgaKip0ZQwvw"/>
+          <ownedAttribute xmi:id="_UXtTYPJbEeSgaKip0ZQwvw" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UXtTYfJbEeSgaKip0ZQwvw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UXyy8PJbEeSgaKip0ZQwvw" name="ALL_MONITOR_DATA" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UXyy8fJbEeSgaKip0ZQwvw" value="6"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UX6uwPJbEeSgaKip0ZQwvw" name="LAST_MONITOR_DATA" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UX6uwfJbEeSgaKip0ZQwvw" value="7"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_UYBccPJbEeSgaKip0ZQwvw" name="doGet" visibility="protected">
+            <ownedParameter xmi:id="_UYBccfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UYBccvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_UYJ_UPJbEeSgaKip0ZQwvw" name="doPost" visibility="protected">
+            <ownedParameter xmi:id="_UYJ_UfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UYJ_UvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_URc6YPJbEeSgaKip0ZQwvw" name="LoginServlet">
+          <generalization xmi:id="_UYOQwPJbEeSgaKip0ZQwvw" general="_UVaNUPJbEeSgaKip0ZQwvw"/>
+          <ownedAttribute xmi:id="_UYUXYPJbEeSgaKip0ZQwvw" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UYUXYfJbEeSgaKip0ZQwvw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UYmEMPJbEeSgaKip0ZQwvw" name="LOGIN_NAME_OR_PSW_ERROR" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UYmEMfJbEeSgaKip0ZQwvw" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UYyRcPJbEeSgaKip0ZQwvw" name="LOGIN_SUCCESS" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UYyRcfJbEeSgaKip0ZQwvw" value="2"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_UY60UPJbEeSgaKip0ZQwvw" name="doGet" visibility="protected">
+            <ownedParameter xmi:id="_UY60UfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UY60UvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_UZBiAPJbEeSgaKip0ZQwvw" name="doPost" visibility="protected">
+            <ownedParameter xmi:id="_UZBiAfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UZBiAvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_URf9sPJbEeSgaKip0ZQwvw" name="CarServlet">
+          <generalization xmi:id="_UZFMYPJbEeSgaKip0ZQwvw" general="_UVaNUPJbEeSgaKip0ZQwvw"/>
+          <ownedAttribute xmi:id="_UZHooPJbEeSgaKip0ZQwvw" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UZHoofJbEeSgaKip0ZQwvw"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_UZLTAPJbEeSgaKip0ZQwvw" name="doGet" visibility="protected">
+            <ownedParameter xmi:id="_UZLTAfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UZLTAvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_UZO9YPJbEeSgaKip0ZQwvw" name="doPost" visibility="protected">
+            <ownedParameter xmi:id="_UZO9YfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UZO9YvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_URiZ8PJbEeSgaKip0ZQwvw" name="RegistServlet">
+          <generalization xmi:id="_UZSnwPJbEeSgaKip0ZQwvw" general="_UVaNUPJbEeSgaKip0ZQwvw"/>
+          <ownedAttribute xmi:id="_UZWSIPJbEeSgaKip0ZQwvw" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UZWSIfJbEeSgaKip0ZQwvw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UZdm4PJbEeSgaKip0ZQwvw" name="REGISTER_NAME_ERROR" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UZdm4fJbEeSgaKip0ZQwvw" value="3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UZk7oPJbEeSgaKip0ZQwvw" name="REGISTER_SUCCESS" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UZk7ofJbEeSgaKip0ZQwvw" value="4"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_UZrCQPJbEeSgaKip0ZQwvw" name="doGet" visibility="protected">
+            <ownedParameter xmi:id="_UZrCQfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UZrCQvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_UZ0MMPJbEeSgaKip0ZQwvw" name="doPost" visibility="protected">
+            <ownedParameter xmi:id="_UZ0MMfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UZ0MMvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_URk2MPJbEeSgaKip0ZQwvw" name="LocationInfoServlet">
+          <generalization xmi:id="_UZ5EsPJbEeSgaKip0ZQwvw" general="_UVaNUPJbEeSgaKip0ZQwvw"/>
+          <ownedAttribute xmi:id="_UZ-kQPJbEeSgaKip0ZQwvw" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UZ-kQfJbEeSgaKip0ZQwvw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_UaKxgPJbEeSgaKip0ZQwvw" name="GET_LOCATION_INFO_ERROR" visibility="public" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_UaKxgfJbEeSgaKip0ZQwvw" value="8"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_UadscPJbEeSgaKip0ZQwvw" name="doGet" visibility="protected">
+            <ownedParameter xmi:id="_UadscfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UadscvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_UawAUPJbEeSgaKip0ZQwvw" name="doPost" visibility="protected">
+            <ownedParameter xmi:id="_UawAUfJbEeSgaKip0ZQwvw" name="req" type="_UVJHkfJbEeSgaKip0ZQwvw"/>
+            <ownedParameter xmi:id="_UawAUvJbEeSgaKip0ZQwvw" name="resp" type="_UVJHkvJbEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UVaNUPJbEeSgaKip0ZQwvw" name="HttpServlet"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UVJHk_JbEeSgaKip0ZQwvw" name="service">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVJuoPJbEeSgaKip0ZQwvw" name="MonitorService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVMK4PJbEeSgaKip0ZQwvw" name="UserService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVPOMPJbEeSgaKip0ZQwvw" name="CarService"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVWi8PJbEeSgaKip0ZQwvw" name="LocationService"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UVLj0PJbEeSgaKip0ZQwvw" name="domain">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVLj0fJbEeSgaKip0ZQwvw" name="UserInfo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UVSRg_JbEeSgaKip0ZQwvw" name="exception">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVS4kPJbEeSgaKip0ZQwvw" name="UserMsgException"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UVH5cPJbEeSgaKip0ZQwvw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_UVH5cfJbEeSgaKip0ZQwvw" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_UVH5cvJbEeSgaKip0ZQwvw" name="IOException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UVIggPJbEeSgaKip0ZQwvw" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_UVIggfJbEeSgaKip0ZQwvw" name="servlet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_UVIggvJbEeSgaKip0ZQwvw" name="ServletException"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_UVIgg_JbEeSgaKip0ZQwvw" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVJHkPJbEeSgaKip0ZQwvw" name="HttpServlet"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVJHkfJbEeSgaKip0ZQwvw" name="HttpServletRequest"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_UVJHkvJbEeSgaKip0ZQwvw" name="HttpServletResponse"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_UVRqcPJbEeSgaKip0ZQwvw" name="org">
+    <packagedElement xmi:type="uml:Package" xmi:id="_UVRqcfJbEeSgaKip0ZQwvw" name="apache">
+      <packagedElement xmi:type="uml:Package" xmi:id="_UVSRgPJbEeSgaKip0ZQwvw" name="commons">
+        <packagedElement xmi:type="uml:Package" xmi:id="_UVSRgfJbEeSgaKip0ZQwvw" name="beanutils">
+          <packagedElement xmi:type="uml:DataType" xmi:id="_UVSRgvJbEeSgaKip0ZQwvw" name="BeanUtils"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

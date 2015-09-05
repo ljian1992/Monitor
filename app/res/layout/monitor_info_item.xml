@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.36" >
+
+        <!-- 时间  -->
+        <TextView
+            android:id="@+id/m_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m_time"
+            android:layout_marginLeft="60dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/t_m_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/m_time"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <!-- 温度 -->
+        <TextView
+            android:id="@+id/m_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/m_time"
+            android:layout_below="@+id/m_time"
+            android:text="@string/m_temperature"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/t_m_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_m_time"
+            android:layout_toRightOf="@+id/m_temperature"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+         <!-- 湿度  -->
+        <TextView
+           android:id="@+id/m_humidity"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/m_temperature"
+            android:layout_below="@+id/m_temperature"
+           android:text="@string/m_humidity"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_humidity"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/t_m_temperature"
+           android:layout_alignLeft="@+id/t_m_temperature"
+           android:layout_toRightOf="@+id/m_humidity"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 二氧化碳  -->
+       <TextView
+           android:id="@+id/m_carbon_dioxide"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_humidity"
+           android:layout_alignRight="@+id/m_humidity"
+           android:text="@string/m_carbon_dioxide"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_carbon_dioxide"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_carbon_dioxide"
+           android:layout_below="@+id/t_m_humidity"
+           android:layout_alignLeft="@+id/t_m_humidity"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 氧气  -->
+       <TextView
+           android:id="@+id/m_oxygen"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_carbon_dioxide"
+           android:layout_alignRight="@+id/m_carbon_dioxide"
+           android:text="@string/m_oxygen"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_oxygen"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_oxygen"
+           android:layout_below="@+id/t_m_carbon_dioxide"
+           android:layout_alignLeft="@+id/t_m_carbon_dioxide"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 氮气  -->
+        <TextView
+           android:id="@+id/m_nitrogen"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_oxygen"
+           android:layout_alignRight="@+id/m_oxygen"
+           android:text="@string/m_nitrogen"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_nitrogen"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_nitrogen"
+           android:layout_below="@+id/t_m_oxygen"
+           android:layout_alignLeft="@+id/t_m_oxygen"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 乙烯  -->
+        <TextView
+           android:id="@+id/m_ethylene"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_nitrogen"
+           android:layout_alignRight="@+id/m_nitrogen"
+           android:text="@string/m_ethylene"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_ethylene"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_ethylene"
+           android:layout_below="@+id/t_m_nitrogen"
+           android:layout_alignLeft="@+id/t_m_nitrogen"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 氨气  -->
+       <TextView
+           android:id="@+id/m_ammonia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_ethylene"
+           android:layout_alignRight="@+id/m_ethylene"
+           android:text="@string/m_ammonia"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_ammonia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_ammonia"
+           android:layout_below="@+id/t_m_ethylene"
+           android:layout_alignLeft="@+id/t_m_ethylene"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        <!-- 二氧化硫  -->
+       <TextView
+           android:id="@+id/m_sulfur_dioxide"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/m_ammonia"
+           android:layout_alignRight="@+id/m_ammonia"
+           android:text="@string/m_sulfur_dioxide"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <TextView
+           android:id="@+id/t_m_sulfur_dioxide"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/m_sulfur_dioxide"
+           android:layout_below="@+id/t_m_ammonia"
+           android:layout_alignLeft="@+id/t_m_ammonia"
+           android:text="Small Text"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</LinearLayout>

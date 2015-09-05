@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="factory">
+  <packagedElement xmi:type="uml:Package" xmi:id="_O0vWgPINEeS7L-xHcF3Ptw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_O0vWgfINEeS7L-xHcF3Ptw" name="monitor">
+      <packagedElement xmi:type="uml:Package" xmi:id="_O0vWgvINEeS7L-xHcF3Ptw" name="factory">
+        <packagedElement xmi:type="uml:Class" xmi:id="_O0v9kPINEeS7L-xHcF3Ptw" name="DaoFactory">
+          <ownedAttribute xmi:id="_O4WrMPINEeS7L-xHcF3Ptw" name="factory" visibility="private" isStatic="true" type="_O0v9kPINEeS7L-xHcF3Ptw" association="_O82wsPINEeS7L-xHcF3Ptw"/>
+          <ownedAttribute xmi:id="_O4dY4PINEeS7L-xHcF3Ptw" name="prop" visibility="private" isStatic="true" type="_O4M6MfINEeS7L-xHcF3Ptw"/>
+          <ownedOperation xmi:id="_O4gcMPINEeS7L-xHcF3Ptw" name="getFactory" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_O4gcMfINEeS7L-xHcF3Ptw" name="return" type="_O0v9kPINEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_O4kGkPINEeS7L-xHcF3Ptw" name="getUserDao" visibility="public">
+            <ownedComment xmi:id="_O4o_EPINEeS7L-xHcF3Ptw">
+              <body>/** 
+ * @return 配置文件中配置的UserDao类
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_O4kGkfINEeS7L-xHcF3Ptw" name="return" type="_O4M6NvINEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_O4pmIPINEeS7L-xHcF3Ptw" name="getCarDao" visibility="public">
+            <ownedComment xmi:id="_O4t3kPINEeS7L-xHcF3Ptw">
+              <body>/** 
+ * @return 配置文件中配置的CarDao类
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_O4pmIfINEeS7L-xHcF3Ptw" name="return" type="_O4M6M_INEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_O4ueoPINEeS7L-xHcF3Ptw" name="getMonitorDao" visibility="public">
+            <ownedComment xmi:id="_O4xh8PINEeS7L-xHcF3Ptw">
+              <body>/** 
+ * @return 配置文件中配置的CarDao类
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_O4ueofINEeS7L-xHcF3Ptw" name="return" type="_O4M6NfINEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_O4yJAPINEeS7L-xHcF3Ptw" name="getLocationDao" visibility="public">
+            <ownedComment xmi:id="_O42acPINEeS7L-xHcF3Ptw">
+              <body>/** 
+ * @return 配置文件中的LocationDao类
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_O4yJAfINEeS7L-xHcF3Ptw" name="return" type="_O4M6NPINEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_O82wsPINEeS7L-xHcF3Ptw" memberEnd="_O4WrMPINEeS7L-xHcF3Ptw _O82wsfINEeS7L-xHcF3Ptw">
+          <ownedEnd xmi:id="_O82wsfINEeS7L-xHcF3Ptw" name="DaoFactory" type="_O0v9kPINEeS7L-xHcF3Ptw" association="_O82wsPINEeS7L-xHcF3Ptw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_O4M6MvINEeS7L-xHcF3Ptw" name="dao">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_O4M6M_INEeS7L-xHcF3Ptw" name="CarDao"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_O4M6NPINEeS7L-xHcF3Ptw" name="LocationDao"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_O4M6NfINEeS7L-xHcF3Ptw" name="MonitorDataDao"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_O4M6NvINEeS7L-xHcF3Ptw" name="UserDao"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_O4MTIPINEeS7L-xHcF3Ptw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_O4MTIfINEeS7L-xHcF3Ptw" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_O4MTIvINEeS7L-xHcF3Ptw" name="FileReader"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_O4M6MPINEeS7L-xHcF3Ptw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_O4M6MfINEeS7L-xHcF3Ptw" name="Properties"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

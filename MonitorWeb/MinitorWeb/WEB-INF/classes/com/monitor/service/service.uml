@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="service">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Vuz38PJVEeSgaKip0ZQwvw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Vuz38fJVEeSgaKip0ZQwvw" name="monitor">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Vuz38vJVEeSgaKip0ZQwvw" name="service">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Vuz38_JVEeSgaKip0ZQwvw" name="UserService">
+          <ownedAttribute xmi:id="_V7C9IPJVEeSgaKip0ZQwvw" name="dao" visibility="private" type="_V6MBgPJVEeSgaKip0ZQwvw" association="_WJclgPJVEeSgaKip0ZQwvw"/>
+          <ownedOperation xmi:id="_V7bXoPJVEeSgaKip0ZQwvw" name="registerUser" visibility="public">
+            <ownedComment xmi:id="_V7nk4PJVEeSgaKip0ZQwvw">
+              <body>/** 
+ * @param user 要注册的用户
+ * @throws UserMsgException
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_V7bXofJVEeSgaKip0ZQwvw" name="user" type="_V6MBgvJVEeSgaKip0ZQwvw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_WDV9gfJVEeSgaKip0ZQwvw" name="isUser" visibility="public">
+            <ownedParameter xmi:id="_WDV9gvJVEeSgaKip0ZQwvw" name="username">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_WDV9g_JVEeSgaKip0ZQwvw" name="password">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_WDV9hPJVEeSgaKip0ZQwvw" name="return" type="_V6MBgvJVEeSgaKip0ZQwvw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VvAFMPJVEeSgaKip0ZQwvw" name="MonitorService">
+          <ownedAttribute xmi:id="_WDiKwPJVEeSgaKip0ZQwvw" name="dao" visibility="private" type="_V6eVYfJVEeSgaKip0ZQwvw"/>
+          <ownedOperation xmi:id="_WDoRYfJVEeSgaKip0ZQwvw" name="getLastMonitorData" visibility="public">
+            <ownedComment xmi:id="_WDuYAPJVEeSgaKip0ZQwvw">
+              <body>/** 
+ * 根据车辆id获取该车最新的监测信息，并转换为xml字符串
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_WDoRYvJVEeSgaKip0ZQwvw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_WDoRY_JVEeSgaKip0ZQwvw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VvAFMfJVEeSgaKip0ZQwvw" name="LocationService">
+          <ownedAttribute xmi:id="_WD0eofJVEeSgaKip0ZQwvw" name="dao" visibility="private" type="_V6kcAPJVEeSgaKip0ZQwvw" association="_WJisIPJVEeSgaKip0ZQwvw"/>
+          <ownedOperation xmi:id="_WD6lQfJVEeSgaKip0ZQwvw" name="getLastLocationInfo" visibility="public">
+            <ownedParameter xmi:id="_WD6lQvJVEeSgaKip0ZQwvw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_WD6lQ_JVEeSgaKip0ZQwvw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VvGL0PJVEeSgaKip0ZQwvw" name="CarService">
+          <ownedAttribute xmi:id="_WEAr4PJVEeSgaKip0ZQwvw" name="dao" visibility="private" type="_V6kcAvJVEeSgaKip0ZQwvw"/>
+          <ownedOperation xmi:id="_WEGygPJVEeSgaKip0ZQwvw" name="getAllCarInfo" visibility="public">
+            <ownedParameter xmi:id="_WEGygfJVEeSgaKip0ZQwvw" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_WJclgPJVEeSgaKip0ZQwvw" memberEnd="_V7C9IPJVEeSgaKip0ZQwvw _WJclgfJVEeSgaKip0ZQwvw">
+          <ownedEnd xmi:id="_WJclgfJVEeSgaKip0ZQwvw" name="UserService" type="_Vuz38_JVEeSgaKip0ZQwvw" association="_WJclgPJVEeSgaKip0ZQwvw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_WJisIPJVEeSgaKip0ZQwvw" memberEnd="_WD0eofJVEeSgaKip0ZQwvw _WJisIfJVEeSgaKip0ZQwvw">
+          <ownedEnd xmi:id="_WJisIfJVEeSgaKip0ZQwvw" name="LocationService" type="_VvAFMfJVEeSgaKip0ZQwvw" association="_WJisIPJVEeSgaKip0ZQwvw"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_V5_0QPJVEeSgaKip0ZQwvw" name="dao">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_V6MBgPJVEeSgaKip0ZQwvw" name="UserDao"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_V6eVYfJVEeSgaKip0ZQwvw" name="MonitorDataDao"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_V6kcAPJVEeSgaKip0ZQwvw" name="LocationDao"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_V6kcAvJVEeSgaKip0ZQwvw" name="CarDao"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_V6MBgfJVEeSgaKip0ZQwvw" name="domain">
+        <packagedElement xmi:type="uml:Class" xmi:id="_V6MBgvJVEeSgaKip0ZQwvw" name="UserInfo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_V6eVYvJVEeSgaKip0ZQwvw" name="MonitorInfo"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_V6kcAfJVEeSgaKip0ZQwvw" name="LocationInfo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_V6kcA_JVEeSgaKip0ZQwvw" name="CarInfo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_V6MBg_JVEeSgaKip0ZQwvw" name="exception">
+        <packagedElement xmi:type="uml:Class" xmi:id="_V6MBhPJVEeSgaKip0ZQwvw" name="UserMsgException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_V6YOwPJVEeSgaKip0ZQwvw" name="factory">
+        <packagedElement xmi:type="uml:Class" xmi:id="_V6YOwfJVEeSgaKip0ZQwvw" name="DaoFactory"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_V6eVY_JVEeSgaKip0ZQwvw" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_V6eVZPJVEeSgaKip0ZQwvw" name="XMlParserUtils"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_V6YOwvJVEeSgaKip0ZQwvw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_V6YOw_JVEeSgaKip0ZQwvw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_V6eVYPJVEeSgaKip0ZQwvw" name="List"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

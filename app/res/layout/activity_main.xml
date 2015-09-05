@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+     >
+
+        <EditText
+            android:id="@+id/LoginUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint = "@string/login_name"
+            android:text="" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/LoginPasswrod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LoginUsername"
+            android:hint = "@string/login_password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LoginPasswrod" 
+            android:gravity="center">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register" 
+                 />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login" />
+        </TableRow>
+
+	
+</RelativeLayout>

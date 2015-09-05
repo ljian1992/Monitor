@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="dao">
+  <packagedElement xmi:type="uml:Package" xmi:id="_E0Qb8fIAEeS7L-xHcF3Ptw" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_E0RDAPIAEeS7L-xHcF3Ptw" name="monitor">
+      <packagedElement xmi:type="uml:Package" xmi:id="_E0RDAfIAEeS7L-xHcF3Ptw" name="dao">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E0RqEPIAEeS7L-xHcF3Ptw" name="UserDao">
+          <ownedOperation xmi:id="_E63aQPIAEeS7L-xHcF3Ptw" name="findUserByUserName" visibility="public">
+            <ownedParameter xmi:id="_E63aQfIAEeS7L-xHcF3Ptw" name="username">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E63aQvIAEeS7L-xHcF3Ptw" name="return" type="_E4MgwfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_E64BUPIAEeS7L-xHcF3Ptw" name="addUser" visibility="public">
+            <ownedParameter xmi:id="_E64BUfIAEeS7L-xHcF3Ptw" name="user" type="_E4MgwfIAEeS7L-xHcF3Ptw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_E64oYPIAEeS7L-xHcF3Ptw" name="findUserByUNandPSW" visibility="public">
+            <ownedParameter xmi:id="_E64oYfIAEeS7L-xHcF3Ptw" name="username">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E64oYvIAEeS7L-xHcF3Ptw" name="password">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E64oY_IAEeS7L-xHcF3Ptw" name="return" type="_E4MgwfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E0TfQPIAEeS7L-xHcF3Ptw" name="MySqlLocationDao" clientDependency="_E65PcPIAEeS7L-xHcF3Ptw">
+          <interfaceRealization xmi:id="_E65PcPIAEeS7L-xHcF3Ptw" name="LocationDao" supplier="_E0gTkPIAEeS7L-xHcF3Ptw" client="_E0TfQPIAEeS7L-xHcF3Ptw" contract="_E0gTkPIAEeS7L-xHcF3Ptw"/>
+          <ownedOperation xmi:id="_E66dkPIAEeS7L-xHcF3Ptw" name="getLocationLastInfo" visibility="public">
+            <ownedParameter xmi:id="_E66dkfIAEeS7L-xHcF3Ptw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E66dkvIAEeS7L-xHcF3Ptw" name="return" type="_E4Nu4_IAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E0V7gPIAEeS7L-xHcF3Ptw" name="MySqlCarDao" clientDependency="_E69g4PIAEeS7L-xHcF3Ptw">
+          <interfaceRealization xmi:id="_E69g4PIAEeS7L-xHcF3Ptw" name="CarDao" supplier="_E0aM8PIAEeS7L-xHcF3Ptw" client="_E0V7gPIAEeS7L-xHcF3Ptw" contract="_E0aM8PIAEeS7L-xHcF3Ptw"/>
+          <ownedOperation xmi:id="_E6-vAPIAEeS7L-xHcF3Ptw" name="getAllCarInfo" visibility="public">
+            <ownedParameter xmi:id="_E6-vAfIAEeS7L-xHcF3Ptw" name="return" type="_E4PkEfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E0Y-0PIAEeS7L-xHcF3Ptw" name="MonitorDataDao">
+          <ownedOperation xmi:id="_E7ByUfIAEeS7L-xHcF3Ptw" name="getLastMonitorData" visibility="public">
+            <ownedParameter xmi:id="_E7ByUvIAEeS7L-xHcF3Ptw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7ByU_IAEeS7L-xHcF3Ptw" name="return" type="_E4SAUPIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E0aM8PIAEeS7L-xHcF3Ptw" name="CarDao">
+          <ownedOperation xmi:id="_E7DAcPIAEeS7L-xHcF3Ptw" name="getAllCarInfo" visibility="public">
+            <ownedParameter xmi:id="_E7DAcfIAEeS7L-xHcF3Ptw" name="return" type="_E4PkEfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E0cCIPIAEeS7L-xHcF3Ptw" name="MySqlMonitorDataDao" clientDependency="_E7DAcvIAEeS7L-xHcF3Ptw">
+          <interfaceRealization xmi:id="_E7DAcvIAEeS7L-xHcF3Ptw" name="MonitorDataDao" supplier="_E0Y-0PIAEeS7L-xHcF3Ptw" client="_E0cCIPIAEeS7L-xHcF3Ptw" contract="_E0Y-0PIAEeS7L-xHcF3Ptw"/>
+          <ownedOperation xmi:id="_E7DngPIAEeS7L-xHcF3Ptw" name="getLastMonitorData" visibility="public">
+            <ownedParameter xmi:id="_E7DngfIAEeS7L-xHcF3Ptw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7DngvIAEeS7L-xHcF3Ptw" name="return" type="_E4SAUPIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_E0gTkPIAEeS7L-xHcF3Ptw" name="LocationDao">
+          <ownedOperation xmi:id="_E7JHEPIAEeS7L-xHcF3Ptw" name="getLocationLastInfo" visibility="public">
+            <ownedParameter xmi:id="_E7JHEfIAEeS7L-xHcF3Ptw" name="car_id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7JHEvIAEeS7L-xHcF3Ptw" name="return" type="_E4Nu4_IAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E0jW4PIAEeS7L-xHcF3Ptw" name="MySqlUserDao" clientDependency="_E7JHE_IAEeS7L-xHcF3Ptw">
+          <interfaceRealization xmi:id="_E7JHE_IAEeS7L-xHcF3Ptw" name="UserDao" supplier="_E0RqEPIAEeS7L-xHcF3Ptw" client="_E0jW4PIAEeS7L-xHcF3Ptw" contract="_E0RqEPIAEeS7L-xHcF3Ptw"/>
+          <ownedOperation xmi:id="_E7JuIPIAEeS7L-xHcF3Ptw" name="findUserByUserName" visibility="public">
+            <ownedParameter xmi:id="_E7JuIfIAEeS7L-xHcF3Ptw" name="username">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7JuIvIAEeS7L-xHcF3Ptw" name="return" type="_E4MgwfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_E7P0wPIAEeS7L-xHcF3Ptw" name="addUser" visibility="public">
+            <ownedParameter xmi:id="_E7P0wfIAEeS7L-xHcF3Ptw" name="user" type="_E4MgwfIAEeS7L-xHcF3Ptw"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_E7XwkPIAEeS7L-xHcF3Ptw" name="findUserByUNandPSW" visibility="public">
+            <ownedParameter xmi:id="_E7XwkfIAEeS7L-xHcF3Ptw" name="username">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7XwkvIAEeS7L-xHcF3Ptw" name="password">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_E7Xwk_IAEeS7L-xHcF3Ptw" name="return" type="_E4MgwfIAEeS7L-xHcF3Ptw" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_E4MgwPIAEeS7L-xHcF3Ptw" name="domain">
+        <packagedElement xmi:type="uml:Class" xmi:id="_E4MgwfIAEeS7L-xHcF3Ptw" name="UserInfo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_E4Nu4_IAEeS7L-xHcF3Ptw" name="LocationInfo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_E4PkEvIAEeS7L-xHcF3Ptw" name="CarInfo"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_E4SAUPIAEeS7L-xHcF3Ptw" name="MonitorInfo"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_E4Nu5PIAEeS7L-xHcF3Ptw" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_E4OV8PIAEeS7L-xHcF3Ptw" name="JDBCUtils"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_E4NH0PIAEeS7L-xHcF3Ptw" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_E4NH0fIAEeS7L-xHcF3Ptw" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_E4Nu4PIAEeS7L-xHcF3Ptw" name="Connection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_E4Nu4fIAEeS7L-xHcF3Ptw" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_E4Nu4vIAEeS7L-xHcF3Ptw" name="ResultSet"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E4O9APIAEeS7L-xHcF3Ptw" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_E4PkEPIAEeS7L-xHcF3Ptw" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_E4PkEfIAEeS7L-xHcF3Ptw" name="List"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
